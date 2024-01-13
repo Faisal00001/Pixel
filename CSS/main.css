@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@layer components {
+
+    /* Button */
+    .aub-btn-default {
+        @apply relative tracking-wide px-4 py-2
+    }
+
+    .aub-btn-medium {
+        @apply relative tracking-wide px-4 py-2 rounded-md
+    }
+
+    .aub-btn-rounded {
+        @apply relative tracking-wide px-4 py-2 rounded-full
+    }
+
+    .aub-btn-small {
+        @apply relative rounded tracking-wide px-2 py-1 text-sm
+    }
+
+    .aub-btn-regular {
+        @apply relative rounded-md tracking-wide px-4 py-2
+    }
+
+    .aub-btn-large {
+        @apply relative rounded-md tracking-wide px-5 py-4 text-lg
+    }
+
+    .aub-btn-icon {
+        @apply inline-block
+    }
+
+    .aub-btn-primary {
+        @apply text-white bg-[#0d6efd] border-[#0d6efd] hover:bg-[#0b5ed7];
+    }
+
+    .aub-btn-secondary {
+        @apply text-white bg-[#6c757d] border-[#6c757d] hover:bg-[#5c636a];
+    }
+
+    .aub-btn-success {
+        @apply text-white bg-[#198754] border-[#198754] hover:bg-[#157347];
+    }
+
+    .aub-btn-danger {
+        @apply text-white bg-[#dc3545] border-[#dc3545] hover:bg-[#bb2d3b];
+    }
+
+    .aub-btn-warning {
+        @apply text-white bg-[#ffc107] border-[#ffc107] hover:bg-[#ffca2c];
+    }
+
+    .aub-btn-info {
+        @apply text-white bg-[#0dcaf0] border-[#0dcaf0] hover:bg-[#31d2f2];
+    }
+
+    .aub-btn-light {
+        @apply text-black bg-[#f8f9fa] border-[#f8f9fa] hover:bg-[#f9fafb];
+    }
+
+    .aub-btn-dark {
+        @apply text-white bg-[#212529] border-[#212529] hover:bg-[#1c1f23];
+    }
+
+    .aub-btn-link {
+        @apply text-blue-500 bg-white border-white hover:bg-white underline;
+    }
+
+    .aub-btn-outline {
+        @apply relative bg-transparent hover:bg-[#0d6efd] text-[#274991] font-semibold hover:text-white py-2 px-4 border-2 border-[#274991] hover:border-transparent rounded-full;
+    }
+
+    /* Card */
+    .aub-card-title {
+        @apply text-xl mb-2 font-bold
+    }
+
+    .aub-card-body {
+        @apply px-6 py-4
+    }
+
+    .aub-card-description {
+        @apply text-gray-700 text-base
+    }
+}
