@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="flex  justify-between items-center bg-black">
+            <div class="pl-10">
+                <img class="w-32 object-cover" src="./images/Logo/logo.png" alt="Logo">
+            </div>
+            <div
+                class="navLinks absolute md:static bg-black min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto pt-10 md:pt-0">
+                <ul class="flex flex-col md:flex-row md:items-center md:gap-5 gap-8 pl-10">
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">Components</span></a></li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">Documentations</span></a></li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">About</span></a></li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">Contact</span></a></a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5 pr-10">
+                <button class="bg-[#bf0238] px-4 py-2 text-white rounded-full">Sign In</button>
+                <div class="flex items-center gap-5">
+                    <!-- <i onclick="onToggleMenu(this)" class="fa-solid fa-bars text-2xl cursor-pointer hidden"
+                        style="color: #e4e7ec;"></i> -->
+                    <ion-icon onclick="onToggleMenu(this)" class="text-white cursor-pointer text-4xl md:hidden"
+                        name="menu"></ion-icon>
+                </div>
+
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </div>
+        </nav>
+    </header>
+    <section class="px-10 mt-24">
+        <h3 class="text-2xl">Basic example</h3>
+        <section class="mt-16">
+            <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input class="form-control" type="text" placeholder="Username">
+            </div>
+            <!-- Code Section -->
+            <div class="mt-10 mb-10">
+                <div class="bg-gray-100 p-4 rounded-md">
+                    <code class="text-gray-800">
+                        <span>&lt;div class="input-group"&gt;
+                            <br>
+                            &lt;span class="input-group-text"&gt;@&lt;/span&gt;
+                            <br>
+                            &lt;input class="form-control" type="text" placeholder="Username"&gt;
+                            <br>
+                        &lt;/div&gt;
+                        </span>
+                    </code>
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="input-group">
+                    <input class="form-control rounded-l rounded-r-none" type="text" placeholder="Username">
+                    <span class="input-group-text rounded-r rounded-l-none">@example.com</span>
+                </div>
+                <!-- Code Section -->
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            <span>&lt;div class="input-group"&gt;
+                                <br>
+                                &lt;input class="form-control rounded-l rounded-r-none" type="text" placeholder="Username"&gt;
+                                <br>
+                                &lt;span class="input-group-text rounded-r rounded-l-none"&gt;@example.com&lt;/span&gt;
+                                <br>
+                            &lt;/div&gt;
+                            </span>
+                        </code>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-10">
+                <h3 class="mb-5 pl-16">Your vanity URL</h3>
+                <div>
+                    <div class="input-group">
+                        <span class="input-group-text">https://example.com/users/</span>
+                        <input class="form-control" type="text" placeholder="Username">
+                    </div>
+                    <!-- Code Section -->
+                    <div class="mt-10 mb-10">
+                        <div class="bg-gray-100 p-4 rounded-md">
+                            <code class="text-gray-800">
+                        <span>&lt;div class="input-group"&gt;
+                            <br>
+                            &lt;span class="input-group-text"&gt;https://example.com/users/&lt;/span&gt;
+                            <br>
+                            &lt;input class="form-control" type="text" placeholder="Username"&gt;
+                            <br>
+                        &lt;/div&gt;
+                        </span>
+                    </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input class="form-control rounded-r-none" type="text" placeholder="Username">
+                    <span class="input-group-text rounded-l-none rounded-r">.00</span>
+                </div>
+                <!-- Code section -->
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+<span>&lt;div class="input-group"&gt;
+    <br>
+    &lt;span class="input-group-text"&gt;$&lt;/span&gt;
+    <br>
+    &lt;input class="form-control rounded-r-none" type="text" placeholder="Username"&gt;
+    <br>
+    &lt;span class="input-group-text rounded-l-none rounded-r"&gt;.00&lt;/span&gt;
+    <br>
+&lt;/div&gt;
+</span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <div class="input-group">
+                    <span class="input-group-text-textarea">With textarea</span>
+                    <textarea class="form-control-textArea " name="" id=""></textarea>
+                </div>
+                <!-- Code section -->
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                           <span>
+                            &lt;div class="input-group"&gt;
+                            <br>
+                            &lt;span class="input-group-text-textarea"&gt;With textarea&lt;/span&gt;
+                            <br>
+                            &lt;textarea class="form-control-textArea" name="" id=""&gt;&lt;/textarea&gt;
+                            <br>
+                        &lt;/div&gt;
+                           </span>
+
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Sizing  -->
+        <section class="mt-16">
+            <h3 class="text-2xl mb-10">Sizing</h3>
+            <div class="input-group">
+                <span class="input-group-text-small">small</span>
+                <input class="form-control-small" type="text" placeholder="Username">
+            </div>
+            <div class="mt-10 mb-10">
+                <div class="bg-gray-100 p-4 rounded-md">
+                    <code class="text-gray-800">
+                        <span>&lt;div class="input-group"&gt;
+                            <br>
+                            &lt;span class="input-group-text-small"&gt;@&lt;/span&gt;
+                            <br>
+                            &lt;input class="form-control-small" type="text" placeholder="Username"&gt;
+                            <br>
+                        &lt;/div&gt;
+                        </span>
+                    </code>
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="input-group">
+                    <span class="input-group-text">Medium</span>
+                    <input class="form-control" type="text" placeholder="Username">
+                </div>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            <span>&lt;div class="input-group"&gt;
+                                <br>
+                                &lt;span class="input-group-text"&gt;Medium&lt;/span&gt;
+                                <br>
+                                &lt;input class="form-control" type="text" placeholder="Username"&gt;
+                                <br>
+                            &lt;/div&gt;
+                            </span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="input-group">
+                    <span class="input-group-text-large">Large</span>
+                    <input class="form-control-large" type="text" placeholder="Username">
+                </div>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            <span>&lt;div class="input-group"&gt;
+                                <br>
+                                &lt;span class="input-group-text-large"&gt;Large&lt;/span&gt;
+                                <br>
+                                &lt;input class="form-control-large" type="text" placeholder="Username"&gt;
+<br>
+                            &lt;/div&gt;
+                            </span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <script>
+        const navLinks = document.querySelector('.navLinks');
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[-100%]');
+            navLinks.classList.toggle('top-[10%]');
+        }
+    </script>
+    <!-- ionicIcon -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
