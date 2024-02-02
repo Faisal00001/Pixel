@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+@import "../src/components/index.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +13,10 @@ body {
     /* Button */
     .aub-btn-default {
         @apply relative tracking-wide px-4 py-2
+    }
+
+    .btn {
+        @apply relative tracking-wide px-4 py-2 rounded
     }
 
     .aub-btn-medium {
@@ -127,5 +131,127 @@ body {
 
     .form-control-large {
         @apply w-full z-10 py-4 border transition pl-3 rounded-r ease-in-out delay-150 focus:outline-none focus:ring focus:ring-[#80bdff] border-[#ced4da]
+    }
+
+    .input-group-text-multipleInputs {
+        @apply input-group-text py-2 w-[20%] text-center
+    }
+
+    .form-control-multipleInputs {
+        @apply w-[40%] z-10 py-2 border transition pl-3 rounded-r ease-in-out delay-150 focus:outline-none focus:ring focus:ring-[#80bdff] border-[#ced4da]
+    }
+
+    /* Alert */
+
+
+    .aub-alert-primary {
+        @apply bg-[#cce5ff] text-[#004085]
+    }
+
+    .aub-alert-secondary {
+        @apply bg-[#e2e3e5] text-[#383d41]
+    }
+
+    .aub-alert-success {
+        @apply bg-[#d4edda] text-[#155724]
+    }
+
+    .aub-alert-danger {
+        @apply bg-[#f8d7da] text-[#721c24]
+    }
+
+    .aub-alert-warning {
+        @apply bg-[#fff3cd] text-[#856404]
+    }
+
+    .aub-alert-info {
+        @apply bg-[#d1ecf1] text-[#0c5460]
+    }
+
+    .aub-alert-light {
+        @apply bg-[#fefefe] text-[#818182]
+    }
+
+    .aub-alert-dark {
+        @apply bg-[#d6d8d9] text-[#1b1e21]
+    }
+
+    .aub-alert-link {
+        @apply font-bold
+    }
+
+    .aub-alert-heading {
+        @apply text-2xl mb-3
+    }
+
+    /* Badges */
+    .aub-badge {
+        @apply px-5 py-1 rounded
+    }
+
+    .aub-bg-primary {
+        @apply bg-[#0d6efd] text-white
+    }
+
+    .aub-bg-secondary {
+        @apply bg-[#6c757d] text-white
+    }
+
+    .aub-bg-success {
+        @apply bg-[#198754] text-white
+    }
+
+    .aub-bg-danger {
+        @apply bg-[#dc3545] text-white
+    }
+
+    .aub-bg-warning {
+        @apply bg-[#ffc107]
+    }
+
+    .aub-bg-info {
+        @apply bg-[#0dcaf0]
+    }
+
+    .aub-bg-dark {
+        @apply bg-[#212529] text-white
+    }
+
+    /* Forms */
+
+    .aub-text-muted {
+        @apply text-[#6c757d]
+    }
+
+    .aub-form-group {
+        @apply space-y-3 mt-5
+    }
+
+    .aub-form-check {
+        @apply mt-5
+    }
+
+    .aub-form-control-file {
+        @apply block
+    }
+
+    .aub-form-group-row-label {
+        @apply flex space-y-3 md:space-y-0 flex-col md:flex-row items-center
+    }
+
+    .aub-col-form-label {
+        @apply w-full md:w-[15%]
+    }
+
+    .aub-form-group-row-input {
+        @apply w-full md:w-[85%]
+    }
+
+    .aub-form-control-plaintext {
+        @apply w-full py-2 px-2
+    }
+
+    .aub-row {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-5
     }
 }

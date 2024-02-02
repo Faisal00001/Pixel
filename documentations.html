@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex  justify-between items-center bg-black">
+            <div class="pl-10">
+                <img class="w-32 object-cover" src="./images/Logo/logo.png" alt="Logo">
+            </div>
+            <div
+                class="navLinks absolute md:static bg-black min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto pt-10 md:pt-0">
+                <ul class="flex flex-col md:flex-row md:items-center md:gap-5 gap-8 pl-10">
+                    <li><a href="./index.html"><span class="text-white hover:text-[#bf0238]">Home</span></a></li>
+                    <li><a href="./collections.html"><span class="text-white hover:text-[#bf0238]">Components</span></a>
+                    </li>
+                    <li><a href="./documentations.html"><span
+                                class="text-white hover:text-[#bf0238]">Documentations</span></a></li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">About</span></a></li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">Contact</span></a></a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5 pr-10">
+                <button class="bg-[#bf0238] px-4 py-2 text-white rounded-full">Sign In</button>
+                <div class="flex items-center gap-5">
+                    <!-- <i onclick="onToggleMenu(this)" class="fa-solid fa-bars text-2xl cursor-pointer hidden"
+                        style="color: #e4e7ec;"></i> -->
+                    <ion-icon onclick="onToggleMenu(this)" class="text-white cursor-pointer text-4xl md:hidden"
+                        name="menu"></ion-icon>
+                </div>
+
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </div>
+        </nav>
+    </header>
+    <section class="mt-24 px-10">
+        <h3 class="text-2xl">Quick start</h3>
+        <p class="text-lg mt-5">Copy-paste the stylesheet
+            &lt;link&gt; into your
+
+            &lt;head&gt; before all other stylesheets to load our CSS.
+        </p>
+        <div class="mt-10 mb-10">
+            <div class="bg-gray-100 p-4 rounded-md">
+                <code class="text-gray-800">
+                    &lt;link rel="stylesheet" href="./dist/assets/index-NEZL084I.css"&gt;
+                </code>
+            </div>
+        </div>
+        <h3 class="text-2xl mt-16">Starter template</h3>
+        <p class="mt-5">Be sure to have your pages set up with the latest design and development standards. That means
+            using an HTML5
+            doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your
+            pages should look like this</p>
+        <div class="mt-10 mb-10">
+            <div class="bg-gray-100 p-4 rounded-md">
+                <code class="text-gray-800">
+                    &lt;!doctype html&gt;
+                    <br>
+&lt;html lang="en"&gt;
+<br>
+  &lt;head&gt;
+  <br>
+    &lt;!-- Required meta tags --&gt;
+    <br>
+    &lt;meta charset="utf-8"&gt;
+    <br>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    <br>
+
+    
+    &lt;link rel="stylesheet" href="./dist/assets/index-NEZL084I.css"&gt;
+    <br>
+
+    &lt;title&gt;Hello, world!&lt;/title&gt;
+    <br>
+  &lt;/head&gt;
+  <br>
+  &lt;body&gt;
+  <br>
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    <br>
+
+   
+  &lt;/body&gt;
+  <br>
+&lt;/html&gt;
+<br>
+
+                    </code>
+            </div>
+        </div>
+        <h3 class="text-2xl">Community</h3>
+        <div class="mt-5 space-y-5">
+            <p>Stay up to date on the development of this and reach out to the community with these helpful
+                resources.</p>
+            <ul class="list-disc pl-6">
+                <li>Follow @getbootstrap on Twitter.</li>
+                <li>Read and subscribe to The Official Bootstrap Blog.</li>
+                <li>Chat with fellow Bootstrappers in IRC. On the irc.freenode.net server, in the ##bootstrap channel.
+                </li>
+                <li>Implementation help may be found at Stack Overflow (tagged bootstrap-4).</li>
+                <li>Developers should use the keyword bootstrap on packages which modify or add to the functionality of
+                    Bootstrap when distributing through npm or similar delivery mechanisms for maximum discoverability.
+                </li>
+            </ul>
+            <p class="mt-5">You can also follow @getbootstrap on Twitter for the latest gossip and awesome music videos.
+            </p>
+        </div>
+    </section>
+    <script>
+        const navLinks = document.querySelector('.navLinks');
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[-100%]');
+            navLinks.classList.toggle('top-[10%]');
+        }
+    </script>
+    <!-- ionicIcon -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

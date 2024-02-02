@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex  justify-between items-center bg-black">
+            <div class="pl-10">
+                <img class="w-32 object-cover" src="./images/Logo/logo.png" alt="Logo">
+            </div>
+            <div
+                class="navLinks absolute md:static bg-black min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto pt-10 md:pt-0">
+                <ul class="flex flex-col md:flex-row md:items-center md:gap-5 gap-8 pl-10">
+                    <li><a href="./index.html"><span class="text-white hover:text-[#bf0238]">Home</span></a></li>
+                    <li><a href="./collections.html"><span class="text-white hover:text-[#bf0238]">Components</span></a>
+                    </li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">Documentations</span></a></li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">About</span></a></li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">Contact</span></a></a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5 pr-10">
+                <button class="bg-[#bf0238] px-4 py-2 text-white rounded-full">Sign In</button>
+                <div class="flex items-center gap-5">
+                    <!-- <i onclick="onToggleMenu(this)" class="fa-solid fa-bars text-2xl cursor-pointer hidden"
+                        style="color: #e4e7ec;"></i> -->
+                    <ion-icon onclick="onToggleMenu(this)" class="text-white cursor-pointer text-4xl md:hidden"
+                        name="menu"></ion-icon>
+                </div>
+
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </div>
+        </nav>
+    </header>
+    <section class="mt-24 px-10">
+        <h3 class="text-2xl">Examples</h3>
+        <div class="mt-10 space-y-5">
+            <!-- Primary alert -->
+            <div class="alert aub-alert-primary" role="alert">
+                This is a primary alert—check it out!
+            </div>
+            <!-- Secondary -->
+            <div class="alert aub-alert-secondary" role="alert">
+                This is a secondary alert—check it out!
+            </div>
+            <!-- success -->
+            <div class="alert aub-alert-success" role="alert">
+                This is a secondary alert—check it out!
+            </div>
+            <!-- danger -->
+            <div class="alert aub-alert-danger" role="alert">
+                This is a danger alert—check it out!
+            </div>
+            <!-- warning -->
+            <div class="alert aub-alert-warning" role="alert">
+                This is a warning alert—check it out!
+            </div>
+            <!-- info -->
+            <div class="alert aub-alert-info" role="alert">
+                This is a info alert—check it out!
+            </div>
+            <!-- light -->
+            <div class="alert aub-alert-light" role="alert">
+                This is a light alert—check it out!
+            </div>
+            <!-- dark -->
+            <div class="alert aub-alert-dark" role="alert">
+                This is a dark alert—check it out!
+            </div>
+        </div>
+        <div class="mt-10 mb-10">
+            <div class="bg-gray-100 p-4 rounded-md">
+                <code class="text-gray-800">
+                    //Primary Alert
+                    <br>
+                    <span>
+                        &lt;div class="alert aub-alert-primary" role="alert"&gt;
+                        <br>
+    This is a primary alert—check it out!
+    <br>
+&lt;/div&gt;
+
+                    </span>
+                    <br>
+                    // Secondary
+                    <br>
+                    <span>
+                        &lt;div class="alert aub-alert-secondary" role="alert"&gt;
+                        <br>
+    This is a secondary alert—check it out!
+    <br>
+&lt;/div&gt;
+
+                    </span>
+                    <br>
+                    //Success Alert
+                    <br>
+                    <span>
+                        &lt;div class="alert aub-alert-success" role="alert"&gt;
+                        <br>
+    This is a secondary alert—check it out!
+    <br>
+&lt;/div&gt;
+
+                    </span> 
+                    <br>
+                    //Danger Alert
+                    <br>
+                    <span>
+                        &lt;div class="alert aub-alert-danger" role="alert"&gt;
+                        <br>
+    This is a danger alert—check it out!
+    <br>
+&lt;/div&gt;
+
+                    </span>
+                    <br>
+                    //Warning Alert
+                    <br>
+                    <span>
+                        &lt;div class="alert aub-alert-warning" role="alert"&gt;
+                        <br>
+    This is a warning alert—check it out!
+    <br>
+&lt;/div&gt;
+
+                    </span>
+                    <br>
+                    //Info Alert
+                    <br>
+                    <span>
+                        &lt;div class="alert aub-alert-info" role="alert"&gt;
+                        <br>
+    This is an info alert—check it out!
+    <br>
+&lt;/div&gt;
+
+                    </span>
+                    <br>
+                    //light Alert
+                    <br>
+                    <span>
+                        &lt;div class="alert aub-alert-light" role="alert"&gt;
+                        <br>
+    This is a light alert—check it out!
+    <br>
+&lt;/div&gt;
+
+                    </span>
+                    <br>
+                    //Dark Alert
+                    <br>
+                    <span>
+                        &lt;div class="alert aub-alert-dark" role="alert"&gt;
+                        <br>
+    This is a dark alert—check it out!
+    <br>
+&lt;/div&gt;
+
+                    </span>
+                </code>
+            </div>
+        </div>
+        <h3 class="text-2xl mt-10">Link color</h3>
+        <div class="mt-10 space-y-5">
+            <div class="alert aub-alert-primary" role="alert">
+                This is a primary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click if
+                you
+                like.
+            </div>
+            <div class="alert aub-alert-secondary" role="alert">
+                This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
+                if
+                you like.
+            </div>
+            <div class="alert aub-alert-success" role="alert">
+                This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
+                if
+                you like.
+            </div>
+            <div class="alert aub-alert-danger" role="alert">
+                This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
+                if
+                you like.
+            </div>
+            <div class="alert aub-alert-warning" role="alert">
+                This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
+                if
+                you like.
+            </div>
+            <div class="alert aub-alert-info" role="alert">
+                This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
+                if
+                you like.
+            </div>
+            <div class="alert aub-alert-light" role="alert">
+                This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
+                if
+                you like.
+            </div>
+            <div class="alert aub-alert-dark" role="alert">
+                This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
+                if
+                you like.
+            </div>
+        </div>
+        <div class="mt-10 mb-10">
+            <div class="bg-gray-100 p-4 rounded-md">
+                <code class="text-gray-800">
+                    //Primary
+                    <br>
+                    &lt;div class="alert aub-alert-primary" role="alert"&gt;
+                    <br>
+    This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
+    you
+    like.
+    <br>
+&lt;/div&gt;
+<br>
+//Secondary 
+<br>
+                    &lt;div class="alert aub-alert-secondary" role="alert"&gt;
+                    <br>
+    This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
+    you
+    like.
+    <br>
+&lt;/div&gt;
+<br>
+//Success 
+<br>
+                    &lt;div class="alert aub-alert-success" role="alert"&gt;
+                    <br>
+    This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
+    you
+    like.
+    <br>
+&lt;/div&gt;
+<br>
+//Danger 
+<br>
+                    &lt;div class="alert aub-alert-danger" role="alert"&gt;
+                    <br>
+    This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
+    you
+    like.
+    <br>
+&lt;/div&gt;
+<br>
+//Warning 
+<br>
+                    &lt;div class="alert aub-alert-warning" role="alert"&gt;
+                    <br>
+    This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
+    you
+    like.
+    <br>
+&lt;/div&gt;
+<br>
+//Info 
+<br>
+                    &lt;div class="alert aub-alert-info" role="alert"&gt;
+                    <br>
+    This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
+    you
+    like.
+    <br>
+&lt;/div&gt;
+<br>
+//Light 
+<br>
+                    &lt;div class="alert aub-alert-light" role="alert"&gt;
+                    <br>
+    This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
+    you
+    like.
+    <br>
+&lt;/div&gt;
+<br>
+//dark 
+<br>
+                    &lt;div class="alert aub-alert-dark" role="alert"&gt;
+                    <br>
+    This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
+    you
+    like.
+    <br>
+&lt;/div&gt;
+
+
+                </code>
+            </div>
+        </div>
+        <h3 class="text-2xl mt-10">Additional content</h3>
+        <div class="mt-10">
+            <div class="alert aub-alert-success" role="alert">
+                <h4 class="aub-alert-heading">Well done!</h4>
+                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit
+                    longer so that you can see how spacing within an alert works with this kind of content.</p>
+                <hr class="border-[#b1dfbb] mt-2 mb-2">
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+            <div class="mt-10 mb-10">
+                <div class="bg-gray-100 p-4 rounded-md">
+                    <code class="text-gray-800">
+<span>
+    &lt;div class="alert aub-alert-success" role="alert"&gt;
+    <br>
+    &lt;h4 class="aub-alert-heading"&gt;Well done!&lt;/h4&gt;
+    <br>
+    &lt;p&gt;Aww yeah, you successfully read this important alert message. This example text is going to run a bit
+    longer so that you can see how spacing within an alert works with this kind of content.&lt;/p&gt;<br> 
+    &lt;hr class="border-[#b1dfbb] mt-2 mb-2"&gt;
+    <br>
+    &lt;p class="mb-0"&gt;Whenever you need to, be sure to use margin utilities to keep things nice and tidy.&lt;/p&gt;
+    <br>
+&lt;/div&gt;
+
+</span>
+                </code>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navbar -->
+    <script>
+        const navLinks = document.querySelector('.navLinks');
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[-100%]');
+            navLinks.classList.toggle('top-[10%]');
+        }
+    </script>
+    <!-- ionicIcon -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

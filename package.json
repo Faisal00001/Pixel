@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "vite build",
+    "build:components:css": "postcss src/components/index.css -o dist/components.css",
+    "build:components:js": "prejss-cli dist/components.css --format commonjs"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex  justify-between items-center bg-black">
+            <div class="pl-10">
+                <img class="w-32 object-cover" src="./images/Logo/logo.png" alt="Logo">
+            </div>
+            <div
+                class="navLinks absolute md:static bg-black min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto pt-10 md:pt-0">
+                <ul class="flex flex-col md:flex-row md:items-center md:gap-5 gap-8 pl-10">
+                    <li><a href="./index.html"><span class="text-white hover:text-[#bf0238]">Home</span></a></li>
+                    <li><a href="./collections.html"><span class="text-white hover:text-[#bf0238]">Components</span></a>
+                    </li>
+                    <li><a href="./documentations.html"><span
+                                class="text-white hover:text-[#bf0238]">Documentations</span></a></li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">About</span></a></li>
+                    <li><a href=""><span class="text-white hover:text-[#bf0238]">Contact</span></a></a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5 pr-10">
+                <button class="bg-[#bf0238] px-4 py-2 text-white rounded-full">Sign In</button>
+                <div class="flex items-center gap-5">
+                    <!-- <i onclick="onToggleMenu(this)" class="fa-solid fa-bars text-2xl cursor-pointer hidden"
+                        style="color: #e4e7ec;"></i> -->
+                    <ion-icon onclick="onToggleMenu(this)" class="text-white cursor-pointer text-4xl md:hidden"
+                        name="menu"></ion-icon>
+                </div>
+
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </div>
+        </nav>
+    </header>
+    <section class="mt-20 px-10">
+        <div>
+            <h3 class="text-2xl mt-16">Overview</h3>
+            <div class="mt-10">
+                <form>
+                    <div class="aub-form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small class="aub-text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="aub-form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="aub-form-check">
+                        <input type="checkbox">
+                        <label for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn aub-btn-primary">Submit</button>
+                </form>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            <span>
+                                &lt;form&gt;
+                                <br>
+    &lt;div class="aub-form-group"&gt;
+    <br>
+        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        <br>
+        &lt;input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email"&gt;
+        <br>
+        &lt;small class="aub-text-muted"&gt;We'll never share your email with anyone else.&lt;/small&gt;
+        <br>
+    &lt;/div&gt;
+    <br>
+    &lt;div class="aub-form-group"&gt;
+    <br>
+        &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+        <br>
+        &lt;input type="password" class="form-control" placeholder="Password"&gt; <br>
+    &lt;/div&gt;
+    <br>
+    &lt;div class="aub-form-check"&gt;
+    <br>
+        &lt;input type="checkbox"&gt;
+        <br>
+        &lt;label for="exampleCheck1"&gt;Check me out&lt;/label&gt;
+        <br>
+    &lt;/div&gt;
+    <br>
+    &lt;button type="submit" class="btn aub-btn-primary"&gt;Submit&lt;/button&gt;
+    <br>
+&lt;/form&gt;
+
+                            </span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 ">
+                <h3 class="text-2xl mb-10">Form controls</h3>
+                <div class="aub-form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" placeholder="name@example.com">
+                </div>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+    <span>                        &lt;div class="aub-form-group"&gt;
+        <br>
+        &lt;label for="exampleFormControlInput1"&gt;Email address&lt;/label&gt;
+        <br>
+        &lt;input type="email" class="form-control" placeholder="name@example.com"&gt;
+        <br>
+    &lt;/div&gt;</span>
+
+                        </code>
+                    </div>
+                </div>
+                <div class="aub-form-group">
+                    <label for="exampleFormControlSelect1">Example select</label>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            <span>
+                                &lt;div class="aub-form-group"&gt;
+                                <br>
+    &lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;
+    <br>
+    &lt;select class="form-control"&gt;
+    <br>
+        &lt;option&gt;1&lt;/option&gt;
+        <br>
+        &lt;option&gt;2&lt;/option&gt;
+        <br>
+        &lt;option&gt;3&lt;/option&gt;
+        <br>
+        &lt;option&gt;4&lt;/option&gt;
+        <br>
+        &lt;option&gt;5&lt;/option&gt;
+        <br>
+    &lt;/select&gt;
+    <br>
+&lt;/div&gt;
+
+                            </span>
+                        </code>
+                    </div>
+                </div>
+                <div class="aub-form-group">
+                    <label for="exampleFormControlSelect2">Example multiple select</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            &lt;div class="aub-form-group"&gt;
+                            <br>
+    &lt;label for="exampleFormControlSelect2"&gt;Example multiple select&lt;/label&gt;
+    <br>
+    &lt;select multiple class="form-control" id="exampleFormControlSelect2"&gt;
+    <br>
+        &lt;option&gt;1&lt;/option&gt;
+        <br>
+        &lt;option&gt;2&lt;/option&gt;
+        <br>
+        &lt;option&gt;3&lt;/option&gt;
+        <br>
+        &lt;option&gt;4&lt;/option&gt;
+        <br>
+        &lt;option&gt;5&lt;/option&gt;
+        <br>
+    &lt;/select&gt;
+    <br>
+&lt;/div&gt;
+
+                        </code>
+                    </div>
+                </div>
+                <div class="aub-form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            &lt;div class="aub-form-group"&gt;
+                            <br>
+    &lt;label for="exampleFormControlTextarea1"&gt;Example textarea&lt;/label&gt;
+    <br>
+    &lt;textarea class="form-control" rows="3"&gt;&lt;/textarea&gt;
+    <br>
+&lt;/div&gt;
+
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-2xl mb-10">File inputs</h3>
+                <form>
+                    <div class="aub-form-group">
+                        <label for="exampleFormControlFile1">Example file input</label>
+                        <input type="file" class="aub-form-control-file">
+                    </div>
+                </form>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            <span>
+                                &lt;form&gt;
+                                <br>
+    &lt;div class="aub-form-group"&gt;
+    <br>
+        &lt;label for="exampleFormControlFile1"&gt;Example file input&lt;/label&gt;
+        <br>
+        &lt;input type="file" class="aub-form-control-file"&gt;
+        <br>
+    &lt;/div&gt;
+    <br>
+&lt;/form&gt;
+
+                            </span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-2xl mb-10">Sizing</h3>
+                <div class="space-y-5">
+                    <input class="form-control-large text-lg" type="text" placeholder=".form-control-lg">
+                    <input class="form-control" type="text" placeholder="Default input">
+                    <input class="form-control-small" type="text" placeholder=".form-control-sm">
+                </div>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            <span>
+                                &lt;input class="form-control-large text-lg" type="text" placeholder=".form-control-lg"&gt;
+                                <br>
+&lt;input class="form-control" type="text" placeholder="Default input"&gt;
+<br>
+&lt;input class="form-control-small" type="text" placeholder=".form-control-sm"&gt;
+
+                            </span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-2xl my-10">Readonly</h3>
+                <div>
+                    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+                </div>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            <span>&lt;input class="form-control" type="text" placeholder="Readonly input here…" readonly&gt;
+                            </span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-2xl my-10">Readonly plain text</h3>
+                <div class="space-y-5">
+                    <div class="aub-form-group-row-label">
+                        <label for="staticEmail" class="aub-col-form-label">Email</label>
+                        <div class="aub-form-group-row-input">
+                            <input type="text" class="aub-form-control-plaintext" readonly value="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mt-10 mb-10">
+                        <div class="bg-gray-100 p-4 rounded-md">
+                            <code class="text-gray-800">
+                                <span>
+                                    &lt;div class="aub-form-group-row-label"&gt;
+                                    <br>
+    &lt;label for="staticEmail" class="aub-col-form-label"&gt;Email&lt;/label&gt;
+    <br>
+    &lt;div class="aub-form-group-row-input"&gt;
+    <br>
+        &lt;input type="text" class="aub-form-control-plaintext" readonly value="email@example.com"&gt;
+        <br>
+    &lt;/div&gt;
+    <br>
+&lt;/div&gt;
+
+                                </span>
+                            </code>
+                        </div>
+                    </div>
+                    <div class="aub-form-group-row-label">
+                        <label for="inputPassword" class="aub-col-form-label">Password</label>
+                        <div class="aub-form-group-row-input">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="mt-10 mb-10">
+                        <div class="bg-gray-100 p-4 rounded-md">
+                            <code class="text-gray-800">
+                                &lt;div class="aub-form-group-row-label"&gt;
+                                <br>
+    &lt;label for="inputPassword" class="aub-col-form-label"&gt;Password&lt;/label&gt;
+    <br>
+    &lt;div class="aub-form-group-row-input"&gt;
+    <br>
+        &lt;input type="password" class="form-control" placeholder="Password"&gt;
+        <br>
+    &lt;/div&gt;
+    <br>
+&lt;/div&gt;
+
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-2xl my-10">Checkboxes and radios</h3>
+                <div class="space-y-5">
+                    <div>
+                        <input type="checkbox" value="">
+                        <label for="defaultCheck1">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="" disabled>
+                        <label class="text-slate-500" for="defaultCheck1">
+                            Disabled checkbox
+                        </label>
+                    </div>
+                    <div class="mt-10 mb-10">
+                        <div class="bg-gray-100 p-4 rounded-md">
+                            <code class="text-gray-800">
+                                <span>
+                                    // Default checkbox
+                                    <br>
+                                    &lt;input type="checkbox" value=""&gt;
+                                    <br>
+&lt;label for="defaultCheck1"&gt;
+    Default checkbox
+&lt;/label&gt;
+
+<br>
+<br>
+// Disabled checkbox
+<br>
+&lt;input type="checkbox" value="" disabled&gt;
+<br>
+&lt;label class="text-slate-500" for="defaultCheck1"&gt;
+    Disabled checkbox
+&lt;/label&gt;
+
+                                </span>
+                            </code>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="radio" name="exampleRadios" value="option1" checked>
+                        <label for="exampleRadios1">
+                            Default radio
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="exampleRadios" value="option3" disabled>
+                        <label class="text-slate-500" for="exampleRadios3">
+                            Disabled radio
+                        </label>
+                    </div>
+                    <div class="mt-10 mb-10">
+                        <div class="bg-gray-100 p-4 rounded-md">
+                            <code class="text-gray-800">
+                                // Default radio 
+                                <br>
+                                &lt;input type="radio" name="exampleRadios" value="option1" checked&gt;
+                                <br>
+&lt;label for="exampleRadios1"&gt;
+    Default radio
+&lt;/label&gt;
+<br>
+<br>
+//Disabled radio
+<br>
+&lt;input type="radio" name="exampleRadios" value="option3" disabled&gt;
+<br>
+&lt;label class="text-slate-500" for="exampleRadios3"&gt;
+    Disabled radio
+&lt;/label&gt;
+
+
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-2xl">Inline</h3>
+                <div class="space-x-4">
+                    <div class="inline">
+                        <input type="checkbox" value="option1">
+                        <label for="inlineCheckbox1">1</label>
+                    </div>
+
+                    <div class="inline">
+                        <input type="checkbox" value="option2">
+                        <label for="inlineCheckbox2">2</label>
+                    </div>
+                    <div class="inline">
+                        <input type="checkbox" value="option3" disabled>
+                        <label class="text-slate-500" for="inlineCheckbox2">2</label>
+                    </div>
+
+                </div>
+                <div class="mt-10 mb-10">
+                    <div class="bg-gray-100 p-4 rounded-md">
+                        <code class="text-gray-800">
+                            &lt;div class="space-x-4"&gt;
+                            <br>
+    &lt;div class="inline"&gt;
+    <br>
+        &lt;input type="checkbox" value="option1"&gt;
+        <br>
+        &lt;label for="inlineCheckbox1"&gt;1&lt;/label&gt;
+        <br>
+    &lt;/div&gt;
+    <br>
+    <br>
+    &lt;div class="inline"&gt;
+    <br>
+        &lt;input type="checkbox" value="option2"&gt;
+        <br>
+        &lt;label for="inlineCheckbox2"&gt;2&lt;/label&gt;
+        <br>
+    &lt;/div&gt;
+    <br>
+    <br>
+    &lt;div class="inline"&gt;
+    <br>
+        &lt;input type="checkbox" value="option3" disabled&gt;
+        <br>
+        &lt;label class="text-slate-500" for="inlineCheckbox2"&gt;2&lt;/label&gt;
+        <br>
+    &lt;/div&gt;
+    <br>
+&lt;/div&gt;
+
+                        </code>
+                    </div>
+                </div>
+                <!-- Forms groups -->
+                <div>
+                    <h3 class="text-2xl">Form groups</h3>
+                    <div class="mt-10">
+                        <div class="aub-form-group">
+                            <label for="formGroupExampleInput">Example label</label>
+                            <input type="text" class="form-control" placeholder="Example input">
+                        </div>
+                        <div class="aub-form-group">
+                            <label for="formGroupExampleInput2">Another label</label>
+                            <input type="text" class="form-control" placeholder="Another input">
+                        </div>
+                    </div>
+                </div>
+                <!-- Form grid -->
+                <div>
+                    <h3 class="mt-16 text-2xl mb-10">Form grid</h3>
+                    <div class="aub-row">
+                        <div>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <p class="my-5 font-bold">More complex layouts can also be created with the grid system.</p>
+                    <div>
+                        <form>
+                            <div class="aub-row">
+                                <div class="aub-form-group">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="aub-form-group">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" placeholder="password">
+                                </div>
+
+                            </div>
+                            <div class="aub-form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" placeholder="1234 Main St">
+                            </div>
+                            <div class="aub-form-group">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="aub-form-check">
+                                <input type="checkbox">
+                                <label for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn aub-btn-primary mt-5">Sign in</button>
+                        </form>
+                    </div>
+                    <div class="mt-10">
+                        <h3 class="my-10">Horizontal form label sizing</h3>
+                        <div class="space-y-5">
+                            <div class="aub-form-group-row-label">
+                                <label for="inputEmail" class="aub-col-form-label">Email</label>
+                                <div class="aub-form-group-row-input">
+                                    <input type="email" class="form-control-small" placeholder="col-form-label-sm">
+                                </div>
+                            </div>
+                            <div class="aub-form-group-row-label">
+                                <label for="inputEmail" class="aub-col-form-label">Email</label>
+                                <div class="aub-form-group-row-input">
+                                    <input type="email" class="form-control" placeholder="col-form-label-sm">
+                                </div>
+                            </div>
+                            <div class="aub-form-group-row-label">
+                                <label for="inputEmail" class="aub-col-form-label">Email</label>
+                                <div class="aub-form-group-row-input">
+                                    <input type="email" class="form-control-large" placeholder="col-form-label-sm">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-16">
+                            <h3 class="text-2xl my-10">Column sizing</h3>
+                            <div class="mt-10">
+                                <form class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                                    <div class="md:col-span-3">
+                                        <input type="text" class="form-control" placeholder="City">
+                                    </div>
+                                    <div class="md:col-span-1">
+                                        <input type="text" class="form-control" placeholder="State">
+                                    </div>
+                                    <div class="md:col-span-1">
+                                        <input type="text" class="form-control" placeholder="ZIP">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="mt-16">
+                            <h3 class="text-2xl my-10">Help text</h3>
+                            <div>
+                                <label for="inputPassword5">Password</label>
+                                <input type="password" id="inputPassword5" class="form-control mt-2"
+                                    aria-describedby="passwordHelpBlock">
+                                <small id="passwordHelpBlock" class="aub-text-muted">
+                                    Your password must be 8-20 characters long, contain letters and numbers, and must
+                                    not contain spaces, special characters, or emoji.
+                                </small>
+                            </div>
+                            <div class="my-10">
+                                <h3>Disabled Text</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const navLinks = document.querySelector('.navLinks');
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[-100%]');
+            navLinks.classList.toggle('top-[10%]');
+        }
+    </script>
+    <!-- ionicIcon -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
