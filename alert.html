@@ -10,9 +10,9 @@
 
 <body>
     <header>
-        <nav class="flex  justify-between items-center bg-black">
+        <nav class="flex  justify-between items-center bg-black py-3">
             <div class="pl-10">
-                <img class="w-32 object-cover" src="./images/Logo/logo.png" alt="Logo">
+                <img class="w-36 object-cover" src="./images/Logo/AUBTech-15.png" alt="Logo">
             </div>
             <div
                 class="navLinks absolute md:static bg-black min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto pt-10 md:pt-0">
@@ -26,7 +26,7 @@
                 </ul>
             </div>
             <div class="flex items-center gap-5 pr-10">
-                <button class="bg-[#bf0238] px-4 py-2 text-white rounded-full">Sign In</button>
+                <button class="bg-[#bf0238] px-4 py-2 text-white rounded-full invisible">Sign In</button>
                 <div class="flex items-center gap-5">
                     <!-- <i onclick="onToggleMenu(this)" class="fa-solid fa-bars text-2xl cursor-pointer hidden"
                         style="color: #e4e7ec;"></i> -->
@@ -42,35 +42,35 @@
         <h3 class="text-2xl">Examples</h3>
         <div class="mt-10 space-y-5">
             <!-- Primary alert -->
-            <div class="alert aub-alert-primary" role="alert">
+            <div class="aub-alert aub-alert-primary" role="alert">
                 This is a primary alert—check it out!
             </div>
             <!-- Secondary -->
-            <div class="alert aub-alert-secondary" role="alert">
+            <div class="aub-alert aub-alert-secondary" role="alert">
                 This is a secondary alert—check it out!
             </div>
             <!-- success -->
-            <div class="alert aub-alert-success" role="alert">
+            <div class="aub-alert aub-alert-success" role="alert">
                 This is a secondary alert—check it out!
             </div>
             <!-- danger -->
-            <div class="alert aub-alert-danger" role="alert">
+            <div class="aub-alert aub-alert-danger" role="alert">
                 This is a danger alert—check it out!
             </div>
             <!-- warning -->
-            <div class="alert aub-alert-warning" role="alert">
+            <div class="aub-alert aub-alert-warning" role="alert">
                 This is a warning alert—check it out!
             </div>
             <!-- info -->
-            <div class="alert aub-alert-info" role="alert">
+            <div class="aub-alert aub-alert-info" role="alert">
                 This is a info alert—check it out!
             </div>
             <!-- light -->
-            <div class="alert aub-alert-light" role="alert">
+            <div class="aub-alert aub-alert-light" role="alert">
                 This is a light alert—check it out!
             </div>
             <!-- dark -->
-            <div class="alert aub-alert-dark" role="alert">
+            <div class="aub-alert aub-alert-dark" role="alert">
                 This is a dark alert—check it out!
             </div>
         </div>
@@ -80,7 +80,7 @@
                     //Primary Alert
                     <br>
                     <span>
-                        &lt;div class="alert aub-alert-primary" role="alert"&gt;
+                        &lt;div class="aub-alert aub-alert-primary" role="alert"&gt;
                         <br>
     This is a primary alert—check it out!
     <br>
@@ -91,7 +91,7 @@
                     // Secondary
                     <br>
                     <span>
-                        &lt;div class="alert aub-alert-secondary" role="alert"&gt;
+                        &lt;div class="aub-alert aub-alert-secondary" role="alert"&gt;
                         <br>
     This is a secondary alert—check it out!
     <br>
@@ -102,7 +102,7 @@
                     //Success Alert
                     <br>
                     <span>
-                        &lt;div class="alert aub-alert-success" role="alert"&gt;
+                        &lt;div class="aub-alert aub-alert-success" role="alert"&gt;
                         <br>
     This is a secondary alert—check it out!
     <br>
@@ -113,7 +113,7 @@
                     //Danger Alert
                     <br>
                     <span>
-                        &lt;div class="alert aub-alert-danger" role="alert"&gt;
+                        &lt;div class="aub-alert aub-alert-danger" role="alert"&gt;
                         <br>
     This is a danger alert—check it out!
     <br>
@@ -124,7 +124,7 @@
                     //Warning Alert
                     <br>
                     <span>
-                        &lt;div class="alert aub-alert-warning" role="alert"&gt;
+                        &lt;div class="aub-alert aub-alert-warning" role="alert"&gt;
                         <br>
     This is a warning alert—check it out!
     <br>
@@ -135,7 +135,7 @@
                     //Info Alert
                     <br>
                     <span>
-                        &lt;div class="alert aub-alert-info" role="alert"&gt;
+                        &lt;div class="aub-alert aub-alert-info" role="alert"&gt;
                         <br>
     This is an info alert—check it out!
     <br>
@@ -146,7 +146,7 @@
                     //light Alert
                     <br>
                     <span>
-                        &lt;div class="alert aub-alert-light" role="alert"&gt;
+                        &lt;div class="aub-alert aub-alert-light" role="alert"&gt;
                         <br>
     This is a light alert—check it out!
     <br>
@@ -157,7 +157,7 @@
                     //Dark Alert
                     <br>
                     <span>
-                        &lt;div class="alert aub-alert-dark" role="alert"&gt;
+                        &lt;div class="aub-alert aub-alert-dark" role="alert"&gt;
                         <br>
     This is a dark alert—check it out!
     <br>
@@ -169,42 +169,42 @@
         </div>
         <h3 class="text-2xl mt-10">Link color</h3>
         <div class="mt-10 space-y-5">
-            <div class="alert aub-alert-primary" role="alert">
+            <div class="aub-alert aub-alert-primary" role="alert">
                 This is a primary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click if
                 you
                 like.
             </div>
-            <div class="alert aub-alert-secondary" role="alert">
+            <div class="aub-alert aub-alert-secondary" role="alert">
                 This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
                 if
                 you like.
             </div>
-            <div class="alert aub-alert-success" role="alert">
+            <div class="aub-alert aub-alert-success" role="alert">
                 This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
                 if
                 you like.
             </div>
-            <div class="alert aub-alert-danger" role="alert">
+            <div class="aub-alert aub-alert-danger" role="alert">
                 This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
                 if
                 you like.
             </div>
-            <div class="alert aub-alert-warning" role="alert">
+            <div class="aub-alert aub-alert-warning" role="alert">
                 This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
                 if
                 you like.
             </div>
-            <div class="alert aub-alert-info" role="alert">
+            <div class="aub-alert aub-alert-info" role="alert">
                 This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
                 if
                 you like.
             </div>
-            <div class="alert aub-alert-light" role="alert">
+            <div class="aub-alert aub-alert-light" role="alert">
                 This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
                 if
                 you like.
             </div>
-            <div class="alert aub-alert-dark" role="alert">
+            <div class="aub-alert aub-alert-dark" role="alert">
                 This is a secondary alert with <a href="#" class="aub-alert-link">an example link</a>. Give it a click
                 if
                 you like.
@@ -215,7 +215,7 @@
                 <code class="text-gray-800">
                     //Primary
                     <br>
-                    &lt;div class="alert aub-alert-primary" role="alert"&gt;
+                    &lt;div class="aub-alert aub-alert-primary" role="alert"&gt;
                     <br>
     This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
     you
@@ -225,7 +225,7 @@
 <br>
 //Secondary 
 <br>
-                    &lt;div class="alert aub-alert-secondary" role="alert"&gt;
+                    &lt;div class="aub-alert aub-alert-secondary" role="alert"&gt;
                     <br>
     This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
     you
@@ -235,7 +235,7 @@
 <br>
 //Success 
 <br>
-                    &lt;div class="alert aub-alert-success" role="alert"&gt;
+                    &lt;div class="aub-alert aub-alert-success" role="alert"&gt;
                     <br>
     This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
     you
@@ -245,7 +245,7 @@
 <br>
 //Danger 
 <br>
-                    &lt;div class="alert aub-alert-danger" role="alert"&gt;
+                    &lt;div class="aub-alert aub-alert-danger" role="alert"&gt;
                     <br>
     This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
     you
@@ -255,7 +255,7 @@
 <br>
 //Warning 
 <br>
-                    &lt;div class="alert aub-alert-warning" role="alert"&gt;
+                    &lt;div class="aub-alert aub-alert-warning" role="alert"&gt;
                     <br>
     This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
     you
@@ -265,7 +265,7 @@
 <br>
 //Info 
 <br>
-                    &lt;div class="alert aub-alert-info" role="alert"&gt;
+                    &lt;div class="aub-alert aub-alert-info" role="alert"&gt;
                     <br>
     This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
     you
@@ -275,7 +275,7 @@
 <br>
 //Light 
 <br>
-                    &lt;div class="alert aub-alert-light" role="alert"&gt;
+                    &lt;div class="aub-alert aub-alert-light" role="alert"&gt;
                     <br>
     This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
     you
@@ -285,7 +285,7 @@
 <br>
 //dark 
 <br>
-                    &lt;div class="alert aub-alert-dark" role="alert"&gt;
+                    &lt;div class="aub-alert aub-alert-dark" role="alert"&gt;
                     <br>
     This is a primary alert with &lt;a href="#" class="aub-alert-link"&gt;an example link&lt;/a&gt;. Give it a click if
     you
@@ -299,7 +299,7 @@
         </div>
         <h3 class="text-2xl mt-10">Additional content</h3>
         <div class="mt-10">
-            <div class="alert aub-alert-success" role="alert">
+            <div class="aub-alert aub-alert-success" role="alert">
                 <h4 class="aub-alert-heading">Well done!</h4>
                 <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit
                     longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -310,7 +310,7 @@
                 <div class="bg-gray-100 p-4 rounded-md">
                     <code class="text-gray-800">
 <span>
-    &lt;div class="alert aub-alert-success" role="alert"&gt;
+    &lt;div class="aub-alert aub-alert-success" role="alert"&gt;
     <br>
     &lt;h4 class="aub-alert-heading"&gt;Well done!&lt;/h4&gt;
     <br>

@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 
 <body>
@@ -46,33 +44,29 @@
             </div>
         </nav>
     </header>
-    <!-- Banner -->
-    <section>
-        <section class="bg-white dark:bg-gray-900">
-            <div class="flex flex-col md:flex-row gap-10 max-w-screen-xl px-4 py-8 mx-auto ">
-
-                <div class="mt-10 flex-1 lg:mt-0 lg:col-span-5 lg:flex">
-                    <img src="./images/Banner/19362653.jpg" alt="mockup">
-                </div>
-                <div class="flex-1 mr-auto place-self-center lg:col-span-7">
-                    <h1
-                        class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight line-gap md:text-5xl xl:text-6xl dark:text-white line-gap">
-                        Popular component library for Tailwind CSS</h1>
-                    <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eaque!.</p>
-
-                    <a href="./collections.html"
-                        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 hover:text-[#bf0238]">
-                        See Components
-                    </a>
-                    <a href="./documentations.html"
-                        class="inline-flex ml-10 items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 hover:text-[#bf0238]">
-                        How to Use <span><i class="fa-solid fa-arrow-right  ml-5" style="color: #1b1c1d;"></i></span>
-                    </a>
-                </div>
+    <div class="container mx-auto">
+        <div class="p-8 flex flex-col lg:flex-row items-center gap-10">
+            <!-- Image div -->
+            <div class="lg:w-1/2">
+                <img src="./images/about/aboutUs.svg" alt="Company Image" class="w-full h-full object-cover rounded-md">
             </div>
-        </section>
-    </section>
+
+            <!-- Text information div -->
+            <div class="lg:w-1/2 p-4">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">About Us</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Welcome to AubTech, your catalyst for digital innovation. As a leading software company, we
+                    specialize in crafting tailored solutions that redefine the digital landscape. Our dynamic team,
+                    fueled by a passion for innovation, delivers high-quality software to propel businesses forward. At
+                    AubTech, we embrace integrity, innovation, and excellence, ensuring our clients stay ahead in a
+                    rapidly evolving technological landscape. Partner with AubTech for cutting-edge solutions designed
+                    to elevate your digital experience. Welcome to a world where innovation meets impact – welcome to
+                    AubTech.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <!-- navbar -->
     <script>
         const navLinks = document.querySelector('.navLinks');

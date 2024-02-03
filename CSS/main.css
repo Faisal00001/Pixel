@@ -15,7 +15,7 @@ body {
         @apply relative tracking-wide px-4 py-2
     }
 
-    .btn {
+    .aub-btn {
         @apply relative tracking-wide px-4 py-2 rounded
     }
 
