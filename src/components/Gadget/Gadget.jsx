@@ -49,7 +49,7 @@ const Gadget = () => {
                 // }}
                 grabCursor={true}
                 modules={[Pagination]}
-                className="mySwiper pb-10 px-20 md:px-0"
+                className="mySwiper pb-10 px-2 md:px-0"
                 breakpoints={{
                     // when window width is >= 768px
                     768: {

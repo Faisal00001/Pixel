@@ -1,3 +1,4 @@
+import FeaturedSavings from "../../components/FeaturedSavings/FeaturedSavings";
 import Gadget from "../../components/Gadget/Gadget";
 import Help from "../../components/Help/Help";
 import Slider from "../../components/Slider/Slider";
@@ -11,6 +12,7 @@ const Home = () => {
             <TopItems></TopItems>
             <Help></Help>
             <Gadget></Gadget>
+            <FeaturedSavings></FeaturedSavings>
         </div>
     );
 };
