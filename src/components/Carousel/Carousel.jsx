@@ -20,13 +20,13 @@ const Carousel = ({
             >
                 {slides}
             </div>
-            <div className="absolute bottom-20 right-0 left-10">
+            <div className="absolute bottom-20 right-0 left-5 md:left-10">
                 {
                     curr === 0 ? <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white uppercase">Make Believe</h3> : curr === 1 ? <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white uppercase">PICTURE PREFECT DEALS</h3> : <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white uppercase">NEW ARRIVALS </h3>
                 }
-                <div className="mt-3 flex items-center gap-5">
+                <div className="mt-3 flex items-center gap-2 md:gap-5">
                     {
-                        curr === 0 ? <p className="text-slate-300 ">Sales on Selected SONY products</p> : curr === 1 ? <p className="text-slate-300 ">Browse our second-hand gear market</p> : <p className="text-slate-300 ">The newest and latest advances of technology</p>
+                        curr === 0 ? <p className="text-slate-300 text-sm md:text-base">Sales on Selected SONY products</p> : curr === 1 ? <p className="text-slate-300 text-sm md:text-base">Browse our second-hand gear market</p> : <p className="text-slate-300 text-sm md:text-base">The newest and latest advances of technology</p>
                     }
                     <FaArrowRight className="text-xl md:text-3xl text-red-500" />
                 </div>
