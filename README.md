@@ -11,7 +11,7 @@
 
 3. Navigate to the project directory:
 
-   cd user-management-server-frontend
+   cd pixel
 
 4. Install dependencies using npm:
 
