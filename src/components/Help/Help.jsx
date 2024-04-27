@@ -10,7 +10,7 @@ const Help = () => {
             <div className="px-5 pb-24 md:px-[65px]">
                 <div className="flex flex-col lg:flex-row gap-5 justify-between ">
                     <div className="flex-1 mt-2">
-                        <img className="h-full" src={image1} alt="" />
+                        <img className="h-full rounded" src={image1} alt="" />
                     </div>
                     <div className="flex-1">
                         <h3 className="text-2xl md:text-3xl font-bold">New to photography? Let us help!</h3>
@@ -23,7 +23,7 @@ const Help = () => {
 
                             <div className="flex flex-col md:flex-row gap-5">
                                 <div className="flex-1">
-                                    <img className="w-full" src={image2} alt="Help section Image" />
+                                    <img className="w-full rounded" src={image2} alt="Help section Image" />
                                 </div>
                                 <div className="flex-1 flex flex-col flex-grow">
                                     <div>
@@ -41,7 +41,7 @@ const Help = () => {
                             <div className="flex flex-col md:flex-row gap-5 mt-5
                             ">
                                 <div className="mt-2 flex-1">
-                                    <img className="w-full" src={image3} alt="Help section Image" />
+                                    <img className="w-full rounded" src={image3} alt="Help section Image" />
                                 </div>
                                 <div className="flex-1 flex flex-col flex-grow">
                                     <div>

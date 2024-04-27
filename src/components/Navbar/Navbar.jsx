@@ -84,7 +84,7 @@ const Navbar = () => {
     ]
     const [open, setOpen] = useState(false)
     return (
-        <div>
+        <div className="md:sticky z-30 top-0">
             <nav className="bg-[#1A1A1B] w-full">
                 <div className="flex justify-between items-center px-5 md:px-16 pt-5  md:pb-5">
                     {/* Menu Icons */}

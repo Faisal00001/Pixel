@@ -11,7 +11,7 @@ const FeaturedSavings = () => {
                 <h3 className="text-3xl font-bold mb-5">Featured savings</h3>
                 <div className="flex flex-col lg:flex-row gap-5">
                     <div className="w-full lg:w-[40%]">
-                        <img className="h-full" src={image1} alt="" />
+                        <img className="h-full rounded" src={image1} alt="" />
                     </div>
                     <div className="w-full lg:w-[60%]">
                         <h3 className="text-3xl font-bold">Turn used gear into new possibilities</h3>
@@ -173,9 +173,9 @@ const FeaturedSavings = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex gap-5 mt-10">
-                                <button className="px-14 md:px-16 py-2 bg-red-500 text-white font-medium">BUY</button>
-                                <button className="border-2 border-slate-500 px-14 md:px-16 py-2 font-medium bg-white text-slate-500">SELL</button>
+                            <div className="flex justify-center md:justify-normal gap-5 mt-10">
+                                <button className="px-10  md:px-16 py-2 bg-red-500 text-white font-medium">BUY</button>
+                                <button className="border-2 border-slate-500 px-10 md:px-16 py-2 font-medium bg-white text-slate-500">SELL</button>
                             </div>
                         </div>
                     </div>
