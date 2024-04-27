@@ -21,3 +21,6 @@
 5.Once the dependencies are installed, you can start the development server: 
    
    npm run dev 
+
+6. After development server start use the development server http://localhost:5173/ link
+
